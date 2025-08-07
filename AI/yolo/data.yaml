@@ -1,0 +1,13 @@
+rain: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 12
+names: ['ALS', 'Angular Leafspot', 'Anthracnose Fruit Rot', 'Bean Rust', 'Blossom Blight', 'Gray Mold', 'Leaf Spot', 'Powdery Mildew Fruit', 'Powdery Mildew Leaf', 'disease', 'leaf mold', 'spider mites']
+
+roboflow:
+  workspace: minhduy
+  project: detecting-diseases-z61sz
+  version: 1
+  license: CC BY 4.0
+  url: https://app.roboflow.com/minhduy/detecting-diseases-z61sz/1

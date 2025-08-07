@@ -1,0 +1,27 @@
+2025-07-24 16:52:11,282 - __main__ - INFO - InfluxDB connection successful
+2025-07-24 16:52:12,879 - __main__ - INFO - Model loaded successfully from water_prediction_model_20250723_154007.pkl
+2025-07-24 16:52:12,880 - __main__ - INFO - Expected features: ['soil_moisture', 'air_humidity', 'air_temp', 'light', 'rainfall', 'moisture_humidity_ratio', 'temp_humidity_interaction', 'light_temp_ratio', 'rainfall_soil_interaction', 'crop_type_pomelo', 'crop_type_rice']
+2025-07-24 16:52:12,880 - __main__ - INFO - Real-time Water Predictor with InfluxDB initialized successfully!
+2025-07-24 16:52:12,935 - __main__ - ERROR - Failed to write to InfluxDB: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json; charset=utf-8', 'X-Influxdb-Build': 'OSS', 'X-Influxdb-Version': 'v2.7.12', 'X-Platform-Error-Code': 'unauthorized', 'Date': 'Thu, 24 Jul 2025 09:52:12 GMT', 'Content-Length': '55'})
+HTTP response body: {"code":"unauthorized","message":"unauthorized access"}
+
+2025-07-24 16:52:12,936 - __main__ - INFO - Prediction: 27.81L, Confidence: medium
+2025-07-24 16:52:12,984 - __main__ - ERROR - Failed to retrieve historical data: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json; charset=utf-8', 'X-Influxdb-Build': 'OSS', 'X-Influxdb-Version': 'v2.7.12', 'X-Platform-Error-Code': 'unauthorized', 'Date': 'Thu, 24 Jul 2025 09:52:12 GMT', 'Content-Length': '55'})
+HTTP response body: b'{"code":"unauthorized","message":"unauthorized access"}'
+
+2025-07-24 16:52:13,035 - __main__ - ERROR - Failed to get statistics: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json; charset=utf-8', 'X-Influxdb-Build': 'OSS', 'X-Influxdb-Version': 'v2.7.12', 'X-Platform-Error-Code': 'unauthorized', 'Date': 'Thu, 24 Jul 2025 09:52:13 GMT', 'Content-Length': '55'})
+HTTP response body: b'{"code":"unauthorized","message":"unauthorized access"}'
+
+2025-07-24 16:52:13,036 - __main__ - INFO - InfluxDB connection closed
+2025-07-24 16:59:14,631 - __main__ - INFO - InfluxDB connection successful
+2025-07-24 16:59:16,281 - __main__ - INFO - Model loaded successfully from water_prediction_model_20250723_154007.pkl
+2025-07-24 16:59:16,281 - __main__ - INFO - Expected features: ['soil_moisture', 'air_humidity', 'air_temp', 'light', 'rainfall', 'moisture_humidity_ratio', 'temp_humidity_interaction', 'light_temp_ratio', 'rainfall_soil_interaction', 'crop_type_pomelo', 'crop_type_rice']
+2025-07-24 16:59:16,281 - __main__ - INFO - Real-time Water Predictor with InfluxDB initialized successfully!
+2025-07-24 16:59:16,376 - __main__ - INFO - Prediction: 27.36L, Confidence: medium
+2025-07-24 16:59:16,646 - __main__ - INFO - InfluxDB connection closed

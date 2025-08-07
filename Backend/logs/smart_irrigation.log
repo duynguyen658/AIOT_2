@@ -1,0 +1,67 @@
+2025-08-07 13:52:21,825 - __main__ - INFO - ==================================================
+2025-08-07 13:52:21,829 - client - INFO - MQTT client started
+2025-08-07 13:52:21,843 - client - INFO -  MQTT Connected successfully
+2025-08-07 13:52:21,851 - __main__ - INFO - ==================================================
+2025-08-07 13:52:21,853 - __main__ - INFO -    • React Frontend: http://localhost:3000
+2025-08-07 13:52:21,870 - __main__ - INFO -    • Backend API: http://localhost:5000
+2025-08-07 13:52:21,872 - __main__ - INFO -    • API Health: http://localhost:5000/api/health
+2025-08-07 13:52:21,873 - __main__ - INFO -    • Device API: http://localhost:5000/api/devices
+2025-08-07 13:52:21,873 - __main__ - INFO -    • System Status: http://localhost:5000/api/system/status
+2025-08-07 13:52:21,874 - __main__ - INFO - ==================================================
+2025-08-07 13:52:21,875 - __main__ - INFO -    • MQTT Broker: 192.168.1.207:1883
+2025-08-07 13:52:21,875 - __main__ - INFO -    • InfluxDB: http://localhost:8086
+2025-08-07 13:52:21,875 - __main__ - INFO -    • Organization: EG Group
+2025-08-07 13:52:21,875 - __main__ - INFO -    • Bucket: IoT
+2025-08-07 13:52:21,875 - __main__ - INFO - ==================================================
+2025-08-07 13:52:21,882 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.207:5000
+2025-08-07 13:52:21,882 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-07 13:54:41,075 - web_server - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\HOMIE PC\anaconda3\envs\admin\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HOMIE PC\anaconda3\envs\admin\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HOMIE PC\anaconda3\envs\admin\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HOMIE PC\anaconda3\envs\admin\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HOMIE PC\anaconda3\envs\admin\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AIOT\backend\web_server.py", line 40, in dashboard
+    return render_template('dashboard.html',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HOMIE PC\anaconda3\envs\admin\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HOMIE PC\anaconda3\envs\admin\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HOMIE PC\anaconda3\envs\admin\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HOMIE PC\anaconda3\envs\admin\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HOMIE PC\anaconda3\envs\admin\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HOMIE PC\anaconda3\envs\admin\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HOMIE PC\anaconda3\envs\admin\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: dashboard.html
+2025-08-07 13:54:41,112 - werkzeug - INFO - 192.168.1.207 - - [07/Aug/2025 13:54:41] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-07 13:57:22,217 - __main__ - INFO -    • Active Devices: 0
+2025-08-07 14:02:22,531 - __main__ - INFO -    • Active Devices: 0
+2025-08-07 14:07:22,866 - __main__ - INFO -    • Active Devices: 0
+2025-08-07 14:12:23,165 - __main__ - INFO -    • Active Devices: 0
+2025-08-07 14:16:01,865 - client - WARNING - MQTT Disconnected with code 0
